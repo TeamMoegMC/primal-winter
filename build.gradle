@@ -161,16 +161,20 @@ publishing {
         }
     }
     repositories {
+//        maven {
+//            name = "TeamMoeg"
+//            url = "http://server.teammoeg.com:8888/releases"
+//            credentials {
+//                username = getPrivateString("mavenUser")
+//                password = getPrivateString("mavenToken")
+//            }
+//            authentication {
+//                basic(BasicAuthentication)
+//            }
+//        }
         maven {
-            name = "TeamMoeg"
-            url = "http://server.teammoeg.com:8888/releases"
-            credentials {
-                username = getPrivateString("mavenUser")
-                password = getPrivateString("mavenToken")
-            }
-            authentication {
-                basic(BasicAuthentication)
-            }
+            name = "COS"
+            url = "http://127.0.0.1:9999"
         }
     }
 }
